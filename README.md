@@ -1,4 +1,7 @@
-# 👋
+# 👋 Hello !
+Personl mini Website.
+
+Inspired and Forked from :
  http://juliangarnier.com
  Personal mini website
 
