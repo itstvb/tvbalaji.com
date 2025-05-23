@@ -11,25 +11,23 @@ window.onload = function() {
   var loadingText = '<b>•</b><b>•</b><b>•</b>';
   var messageIndex = 0;
 
-  var getCurrentTime = function() {
-    var date = new Date();
-    var hours =  date.getHours();
-    var minutes =  date.getMinutes();
-    var current = hours + (minutes * .01);
-    if (current >= 5 && current < 19) return 'Have a nice day';
-    if (current >= 19 && current < 22) return 'Have a nice evening';
-    if (current >= 22 || current < 5) return 'Have a good night';
-  }
+  function getCurrentTime() {
+    const hours = new Date().getHours();
 
+    if (hours >= 5 && hours < 19) return 'Have a nice day';
+    if (hours >= 19 && hours < 22) return 'Have a nice evening';
+    return 'Have a good night'; 
+}
   var messages = [
     'Hey there 👋',
-    'I\'m Julian',
-    'I design and code things on the web',
-    'I\'m currently working on <a href="https://github.com/sponsors/juliangarnier" target="_blank">anime.js v4</a>',
-    'You can find me on <a target="_blank" href="https://x.com/juliangarnier">X</a>, <a target="_blank" href="https://bsky.app/profile/julian.gr">Bluesky</a> and <a target="_blank" href="https://github.com/juliangarnier">GitHub</a>',
-    'Or contact me directly at <a href="mailto:hello@julian.gr">hello@julian.gr</a>',
+    'I\'m TV Balaji',
+	'Yeah! that\'s my real name.',
+	'I\'m a Mechanical Engineer👷🏻‍♀️ with a hobby to design and code things on the web',
+    'I\'m currently working as a Lean Manufacturing Expert in <a href="https://www.ferrero.com/int/en/" target="_blank">Ferrero</a>',
+    'You can find me on <a target="_blank" href="https://linkedin.com/in/iambalajitv">Linkedin</a>',
+    'Or contact me directly at <a href="mailto:hello@iambalaji.com">hello@tvbalaji.com</a>',
     getCurrentTime(),
-    '~ J.',
+    '~ tvb.',
   ]
 
   var getFontSize = function() {
